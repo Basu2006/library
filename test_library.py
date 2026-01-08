@@ -1,11 +1,12 @@
-def library_book_details(book_id, title, author, year):
-    return (
-        f"Book Id : {book_id}\n"
-        f"Title : {title}\n"
-        f"Author : {author}\n"
-        f"Year : {year}\n"
+from library import library_book_details
+
+def test_library_book_details():
+    expected_output = (
+        "Book Id : 101\n"
+        "Title : Python Programming\n"
+        "Author : Jhon\n"
+        "Year : 2020\n"
     )
 
-
-    assert library_book_details(101, "Python Programming", "Jhon", 2020) == expected_output
-    
+    result = library_book_details(101, "Python Programming", "Jhon", 2020)
+    assert result == expected_output
