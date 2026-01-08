@@ -7,9 +7,9 @@ def library_book_details(book_id, title, author, year):
     )
 
 if __name__ == "__main__":
-    book_id = input("Enter book id: ")
+    book_id = input("Enter the bookId")
     title = input("Enter the title: ")
     author = input("Enter author name: ")
     year = input("Enter the year: ")
 
-    print(library_book_details(book_id, title, author, year))
+    print(library_book_details(101,"Python Programming","Jhon", 2020))
